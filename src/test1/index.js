@@ -8,10 +8,12 @@ import {
   includes,
   compose,
   partial,
+  filter,
 } from 'ramda';
 
-const extractLetters = (text) =>
-  text.split('').filter((letter) => includes(letter, ['(', ')', '[', ']', '<', '>']));
+const NOT_FOUND = -1;
+
+const extractLetters = filter((letter) => includes(letter, ['(', ')', '[', ']', '<', '>']));
 
 const rejectIndexed = addIndex(reject);
 const withoutIndex = (index) => rejectIndexed((_, idx) => idx === index);
@@ -19,7 +21,7 @@ const withoutIndex = (index) => rejectIndexed((_, idx) => idx === index);
 export const withoutValidPair = (startLetter, endLetter, letters) => {
   const startLetterIndex = findLastIndex(equals(startLetter), letters);
 
-  if (startLetterIndex === -1) {
+  if (startLetterIndex === NOT_FOUND) {
     return letters;
   }
 
@@ -39,7 +41,7 @@ const withoutPairs = compose(
   partial(withoutValidPair, ['<', '>'])
 );
 
-export const isValid = (letters, iteration) => {
+export const isValid = (letters, iteration = undefined) => {
   const currentIteration = isNil(iteration)
     ? Math.ceil(letters.length / 2.0) // first iteration
     : iteration;
