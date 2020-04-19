@@ -1,19 +1,36 @@
 {
   "name": "luminaty",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Test case for Luminati",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch",
+    "lint": "eslint --fix --ext .js src/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sm00th1980/luminaty.git"
+    "url": "git+ssh://git@github.com/sm00th1980/luminaty.git"
   },
-  "author": "",
+  "author": "Ruslan Deyarov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sm00th1980/luminaty/issues"
+    "url": "https://github.com/sm00th1980/justify-grid-geometry/issues"
   },
-  "homepage": "https://github.com/sm00th1980/luminaty#readme"
+  "homepage": "https://github.com/sm00th1980/justify-grid-geometry#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.3.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4"
+  },
+  "dependencies": {
+    "ramda": "^0.27.0"
+  }
 }
