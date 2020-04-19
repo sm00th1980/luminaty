@@ -14,9 +14,9 @@
   "author": "Ruslan Deyarov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sm00th1980/justify-grid-geometry/issues"
+    "url": "https://github.com/sm00th1980/luminaty/issues"
   },
-  "homepage": "https://github.com/sm00th1980/justify-grid-geometry#readme",
+  "homepage": "https://github.com/sm00th1980/luminaty#readme",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
