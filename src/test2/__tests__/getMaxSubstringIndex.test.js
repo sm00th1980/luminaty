@@ -51,7 +51,7 @@ describe('getMaxSubstringIndex', () => {
     expect(result).toBe(0);
   });
 
-  it('test 5', () => {
+  it('test 6', () => {
     const text = 'moscow';
     const substring1 = undefined;
     const substring2 = 's';
@@ -61,7 +61,7 @@ describe('getMaxSubstringIndex', () => {
     expect(result).toBe(2);
   });
 
-  it('test 6', () => {
+  it('test 7', () => {
     const text = '1oscow';
     const substring1 = 1;
     const substring2 = undefined;
@@ -71,7 +71,7 @@ describe('getMaxSubstringIndex', () => {
     expect(result).toBe(0);
   });
 
-  it('test 7', () => {
+  it('test 8', () => {
     const text = 'moscow5';
     const substring1 = undefined;
     const substring2 = 5;
@@ -81,7 +81,7 @@ describe('getMaxSubstringIndex', () => {
     expect(result).toBe(6);
   });
 
-  it('test 8', () => {
+  it('test 9', () => {
     const text = 'mo4scow5';
     const substring1 = 4;
     const substring2 = 5;
@@ -91,7 +91,7 @@ describe('getMaxSubstringIndex', () => {
     expect(result).toBe(7);
   });
 
-  it('test 9', () => {
+  it('test 10', () => {
     const text = 'mo4scow5';
     const substring1 = 5;
     const substring2 = 4;
@@ -101,7 +101,7 @@ describe('getMaxSubstringIndex', () => {
     expect(result).toBe(7);
   });
 
-  it('test 10', () => {
+  it('test 11', () => {
     const text = 'moscow';
     const substring1 = 'a';
     const substring2 = 'b';
